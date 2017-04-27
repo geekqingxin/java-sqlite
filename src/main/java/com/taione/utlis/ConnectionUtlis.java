@@ -12,11 +12,11 @@ public class ConnectionUtlis {
      * @return 连接对象
      * @throws Exception
      */
-    public static Connection getConnection() throws Exception{
+    public static Connection getConnection(String jdbcUrl) throws Exception{
         Connection c = null;
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\td\\adduser\\time_count.db");
+            c = DriverManager.getConnection(jdbcUrl);
 
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );

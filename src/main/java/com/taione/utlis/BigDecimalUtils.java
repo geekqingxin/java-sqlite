@@ -112,4 +112,20 @@ public class BigDecimalUtils {
     public static double mul(double value1, double value2, int scale){
         return round(mul(value1, value2), scale);
     }
+
+
+    public static void main(String[] args) {
+        int y = 0;
+        int x = 0;
+        int time = 0;
+        int hour = 1;
+        if (x != hour){
+            time = y;
+            System.out.println(time);
+
+            x = hour;
+        }
+
+
+    }
 }
